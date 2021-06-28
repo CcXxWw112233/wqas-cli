@@ -34,10 +34,10 @@ function registerCommand() {
 
   program
     .command('learn')
-    .description('访问课程链接')
+    .description('访问文档链接')
     .action(() => {
       log.success('欢迎来到wqas', '系统文档');
-      log.success('课程链接', 'https://www.baidu.com');
+      log.success('文档链接', 'https://www.baidu.com');
     });
 
   program
@@ -103,7 +103,7 @@ function registerCommand() {
 
   program
     .command('replace')
-    .description('作业网站优化')
+    .description('网站优化')
     .option('--packagePath <packagePath>', '手动指定replace包路径')
     .option('--region <region>', 'oss region')
     .option('--bucket <bucket>', 'oss bucket')

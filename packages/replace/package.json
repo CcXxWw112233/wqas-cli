@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "> TODO: description",
   "author": "sam <247765564@qq.com>",
-  "homepage": "https://github.com/sam9831/wqas-cli#readme",
+  "homepage": "https://github.com/CcXxWw112233/wqas-cli#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sam9831/wqas-cli.git"
+    "url": "git+https://github.com/CcXxWw112233/wqas-cli.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/sam9831/wqas-cli/issues"
+    "url": "https://github.com/CcXxWw112233/wqas-cli/issues"
   },
   "dependencies": {
     "@wqas-cli/utils": "^1.1.1",
