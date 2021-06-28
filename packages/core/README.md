@@ -1,29 +1,29 @@
-# 慕课网前端统一研发脚手架
+# 统一研发专属脚手架
 
 ## About
 
-慕课网前端架构师课程专属脚手架
+企业内部一站式研发专属脚手架
 
 ## Getting Started
 
 安装：
 
 ```bash
-npm install -g @imooc-cli/core
+npm install -g @wqas-cli/core
 # OR
-yarn global add @imooc-cli/core
+yarn global add @wqas-cli/core
 ```
 
 创建项目
 
 ```bash
-imooc-cli init 
+wqas-cli init 
 ```
 
 发布项目
 
 ```bash
-imooc-cli publish
+wqas-cli publish
 ```
 
 ## More
@@ -31,17 +31,17 @@ imooc-cli publish
 清空缓存：
 
 ```bash
-imooc-cli clean
+wqas-cli clean
 ```
 
 DEBUG 模式：
 
 ```bash
-imooc-cli --debug
+wqas-cli --debug
 ```
 
 指定本地包：
 
 ```bash
-imooc-cli init --packagePath /Users/sam/Desktop/imooc-cli/packages/init/
+wqas-cli init --packagePath /Users/sam/Desktop/wqas-cli/packages/init/
 ```

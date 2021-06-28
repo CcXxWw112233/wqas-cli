@@ -5,7 +5,7 @@ const path = require('path');
 const assert = require('assert');
 const fse = require('fs-extra');
 const glob = require('glob');
-const { log } = require('@imooc-cli/utils');
+const { log } = require('@wqas-cli/utils');
 
 async function replace(params) {
   try {
@@ -114,7 +114,7 @@ async function uploadAllImagesToOSS(imageDirs, params) {
   const oss = require('ali-oss')({
     accessKeyId: params.ossAccessKey,
     accessKeySecret: params.ossSecretKey,
-    bucket: params.bucket || 'imooc-lego-homework',
+    bucket: params.bucket || 'wqas-lego-homework',
     region: params.region || 'oss-cn-hangzhou',
   });
   for (const dir of imageDirs) {

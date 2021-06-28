@@ -2,6 +2,6 @@
 
 const replace = require('..');
 
-describe('@imooc-cli/replace', () => {
+describe('@wqas-cli/replace', () => {
     it('needs tests');
 });

@@ -1,3 +1,3 @@
 module.exports = {
-  welcome: 'Welcome using imooc cli',
+  welcome: 'Welcome using wqas cli',
 }

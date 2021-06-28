@@ -5,7 +5,7 @@ const program = require('commander');
 const colors = require('colors/safe');
 const userHome = require('user-home');
 const semver = require('semver');
-const { log, npm, Package, exec, locale } = require('@imooc-cli/utils');
+const { log, npm, Package, exec, locale } = require('@wqas-cli/utils');
 const packageConfig = require('../package');
 
 const {
@@ -36,10 +36,8 @@ function registerCommand() {
     .command('learn')
     .description('访问课程链接')
     .action(() => {
-      log.success('欢迎学习', '慕课网前端架构师课程');
-      log.success('课程链接', 'https://coding.imooc.com/class/445.html');
-      log.success('课程介绍', '小宇宙燃烧吧');
-      log.success('作者介绍', 'Sam@2020');
+      log.success('欢迎来到wqas', '系统文档');
+      log.success('课程链接', 'https://www.baidu.com');
     });
 
   program
@@ -48,7 +46,7 @@ function registerCommand() {
     .option('--packagePath <packagePath>', '手动指定init包路径')
     .option('--force', '覆盖当前路径文件（谨慎使用）')
     .action(async (type, { packagePath, force }) => {
-      const packageName = '@imooc-cli/init';
+      const packageName = '@wqas-cli/init';
       const packageVersion = '1.0.0';
       await execCommand({ packagePath, packageName, packageVersion }, { type, force });
     });
@@ -82,7 +80,7 @@ function registerCommand() {
                      cnpm,
                      buildCmd,
                    }) => {
-      const packageName = '@imooc-cli/publish';
+      const packageName = '@wqas-cli/publish';
       const packageVersion = '1.0.0';
       if (force) {
         refreshToken = true;
@@ -112,7 +110,7 @@ function registerCommand() {
     .option('--ossAccessKey <ossAccessKey>', 'oss accessKey')
     .option('--ossSecretKey <ossSecretKey>', 'oss secretKey')
     .action(async ({ packagePath, region, bucket, ossAccessKey, ossSecretKey }) => {
-      const packageName = '@imooc-cli/replace';
+      const packageName = '@wqas-cli/replace';
       const packageVersion = '1.0.0';
       await execCommand({ packagePath, packageName, packageVersion }, { region, bucket, ossAccessKey, ossSecretKey });
     });
@@ -230,7 +228,7 @@ async function prepare() {
 }
 
 async function checkGlobalUpdate() {
-  log.verbose('检查 imooc-cli 最新版本');
+  log.verbose('检查 wqas-cli 最新版本');
   const currentVersion = packageConfig.version;
   const lastVersion = await npm.getNpmLatestSemverVersion(NPM_NAME, currentVersion);
   if (lastVersion && semver.gt(lastVersion, currentVersion)) {
@@ -292,7 +290,7 @@ function checkRoot() {
 function checkNodeVersion() {
   const semver = require('semver');
   if (!semver.gte(process.version, LOWEST_NODE_VERSION)) {
-    throw new Error(colors.red(`imooc-cli 需要安装 v${LOWEST_NODE_VERSION} 以上版本的 Node.js`));
+    throw new Error(colors.red(`wqas-cli 需要安装 v${LOWEST_NODE_VERSION} 以上版本的 Node.js`));
   }
 }
 

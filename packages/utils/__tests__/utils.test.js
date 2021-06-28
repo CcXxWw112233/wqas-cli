@@ -2,6 +2,6 @@
 
 const utils = require('..');
 
-describe('@imooc-cli/utils', () => {
+describe('@wqas-cli/utils', () => {
     it('needs tests');
 });

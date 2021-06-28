@@ -17,7 +17,7 @@ const getOSSFile = require('../Build/getOSSFile');
 const get = require('lodash/get');
 const axios = require('axios');
 
-const DEFAULT_CLI_HOME = '.imooc-cli';
+const DEFAULT_CLI_HOME = '.wqas-cli';
 const GIT_ROOT_DIR = '.git';
 const GIT_SERVER_FILE = '.git_server';
 const GIT_TOKEN_FILE = '.git_token';
@@ -430,7 +430,7 @@ pnpm-debug.log*
       } else {
         log.error(err.message);
       }
-      log.error('请重新执行 imooc-cli publish，如仍然报错请尝试删除 .git 目录后重试');
+      log.error('请重新执行 wqas-cli publish，如仍然报错请尝试删除 .git 目录后重试');
       process.exit(0);
     });
   };

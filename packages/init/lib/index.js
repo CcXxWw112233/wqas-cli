@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const fse = require('fs-extra');
-const { log, inquirer, spinner, Package, sleep, exec, formatName, formatClassName, ejs } = require('@imooc-cli/utils');
+const { log, inquirer, spinner, Package, sleep, exec, formatName, formatClassName, ejs } = require('@wqas-cli/utils');
 const getProjectTemplate = require('./getProjectTemplate');
 
 const COMPONENT_FILE = '.componentrc';

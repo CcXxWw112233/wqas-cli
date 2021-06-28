@@ -1,11 +1,11 @@
-# `@imooc-cli/replace`
+# `@wqas-cli/replace`
 
 > TODO: description
 
 ## Usage
 
 ```
-const replace = require('@imooc-cli/replace');
+const replace = require('@wqas-cli/replace');
 
 // TODO: DEMONSTRATE API
 ```

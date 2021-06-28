@@ -2,6 +2,6 @@
 
 const core = require('..');
 
-describe('@imooc-cli/core', () => {
+describe('@wqas-cli/core', () => {
     it('needs tests');
 });

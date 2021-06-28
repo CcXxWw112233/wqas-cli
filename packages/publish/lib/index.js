@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const fse = require('fs-extra');
 const colors = require('colors');
-const { log, Git } = require('@imooc-cli/utils');
+const { log, Git } = require('@wqas-cli/utils');
 
 async function publish(options) {
   log.verbose('publish', options);
