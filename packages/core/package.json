@@ -1,8 +1,7 @@
 {
   "name": "@wqas-cli/core",
-  "version": "1.1.2",
+  "version": "0.0.1",
   "description": "wqas-cli core",
-  "author": "sam <247765564@qq.com>",
   "homepage": "https://github.com/CcXxWw112233/wqas-cli#readme",
   "license": "ISC",
   "main": "bin/wqas-cli.js",
